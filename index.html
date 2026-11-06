@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora tus emociones con juegos, ideas y ejercicios sencillos para conocerte mejor.">
+    <meta name="theme-color" content="#fff9f1">
+    <title>Emociona — un espacio para sentir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/tasty" rel="stylesheet">
+                
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Emociona, ir al inicio">
+            <span class="brand-mark" aria-hidden="true">✳</span>
+            <span>emoci<span>ona</span></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+            <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+        </button>
+        <nav class="nav-links" id="siteNav" aria-label="Navegación principal">
+            <a href="#conocer"><span class="nav-link-icon" aria-hidden="true">01</span>Conocer</a>
+            <a href="#mi-emocion"><span class="nav-link-icon" aria-hidden="true">02</span>¿Cómo estoy?</a>
+            <a href="#jugar"><span class="nav-link-icon" aria-hidden="true">03</span>Jugar</a>
+            <a href="#pausa"><span class="nav-link-icon" aria-hidden="true">04</span>Hacer una pausa</a>
+        </nav>
+        <a class="header-cta" href="#mi-emocion">Empieza aquí <span aria-hidden="true"></span></a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="sparkle">✦</span> ESTE ESPACIO ES PARA TI</p>
+                <h1 class="curtain-title"><span>Lo que sientes</span><span class="title-accent">merece brillar.</span></h1>
+                <p class="hero-description">Aquí caben tus días brillantes, tus tormentas y todo lo que aún no sabes nombrar. Este espacio es tuyo: siente a tu manera, sin pedir permiso.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#mi-emocion">Explorar cómo me siento <span aria-hidden="true">↓</span></a>
+                    <a class="button button-text" href="#conocer">Conocer las emociones <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-footnote"><span class="pulse-dot"></span> No estás solo en lo que sientes. ♡</div>
+            </div>
+            <div class="emotion-showcase" id="emotionShowcase" aria-label="Emociones que van cambiando">
+                <div class="emotion-scene" id="emotionScene" data-mood="alegría">
+                    <span class="featured-sticker">UNIVERSO<br>EMOCIONAL</span>
+                    <span class="featured-sparkle sparkle-one" aria-hidden="true">✦</span>
+                    <span class="featured-sparkle sparkle-two" aria-hidden="true">*
+</span>
+                    <span class="featured-emoji" id="featuredEmoji" aria-hidden="true">😊</span>
+                    <p class="featured-mood" id="featuredMood">alegría</p>
+                    <p class="featured-caption">todas tus emociones tienen un lugar aquí</p>
+                </div>
+                <div class="emotion-controls" aria-label="Cambiar emoción destacada">
+                    <button class="emotion-control" id="previousEmotion" type="button" aria-label="Emoción anterior">←</button>
+                    <span class="emotion-control-hint"><span id="emotionCount">01 / 06</span> · explora tus emociones</span>
+                    <button class="emotion-control" id="nextEmotion" type="button" aria-label="Siguiente emoción">→</button>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#conocer" aria-label="Desplazarse a la siguiente sección"><span></span> baja un poquito</a>
+        </section>
+
+        <section class="intro-section section-wrap" id="conocer">
+            <div class="section-kicker">01 / ENTENDER PARA CUIDARNOS</div>
+            <div class="intro-heading">
+                <h2>Sentir no es un problema.<br><span>Es información.</span></h2>
+                <p>Las emociones nos ayudan a entender lo que vivimos, lo que valoramos y lo que necesitamos. Aprender a reconocerlas puede hacer más fácil expresarnos y pedir apoyo.</p>
+            </div>
+            <div class="emotion-cards">
+                <article class="emotion-info-card card-yellow">
+                    <span class="card-emoji" aria-hidden="true">☀️</span>
+                    <h3>Nos orientan</h3>
+                    <p>La alegría nos acerca a lo que disfrutamos; el miedo puede avisarnos que necesitamos seguridad.</p>
+                    <span class="card-number">01</span>
+                </article>
+                <article class="emotion-info-card card-pink">
+                    <span class="card-emoji" aria-hidden="true">💬</span>
+                    <h3>Nos conectan</h3>
+                    <p>Nombrar lo que sentimos nos ayuda a comunicarnos y a comprender mejor a otras personas.</p>
+                    <span class="card-number">02</span>
+                </article>
+                <article class="emotion-info-card card-blue">
+                    <span class="card-emoji" aria-hidden="true">🌱</span>
+                    <h3>Nos enseñan</h3>
+                    <p>No tenemos que esconder ni obedecer cada emoción: podemos escucharla y elegir qué hacer.</p>
+                    <span class="card-number">03</span>
+                </article>
+            </div>
+            <p class="soft-note"><span aria-hidden="true">✳</span> Una emoción es real, pero no define quién eres ni dura para siempre.</p>
+        </section>
+
+        <section class="checkin-section" id="mi-emocion">
+            <div class="checkin-inner section-wrap">
+                <div class="section-kicker">02 / UN MOMENTO CONTIGO</div>
+                <div class="checkin-heading">
+                    <div>
+                        <h2>¿Qué emoción<br><span>te visita hoy?</span></h2>
+                        <p>No tienes que tenerlo todo claro. Elige lo que más se acerque.</p>
+                    </div>
+                    <div class="checkin-decoration" aria-hidden="true">♡</div>
+                </div>
+                <div class="mood-options" role="group" aria-label="Elige la emoción que sientes">
+                    <button class="mood-option" type="button" data-mood="alegría" aria-pressed="false"><span>😊</span><b>Alegría</b></button>
+                    <button class="mood-option" type="button" data-mood="tristeza" aria-pressed="false"><span>😔</span><b>Tristeza</b></button>
+                    <button class="mood-option" type="button" data-mood="enojo" aria-pressed="false"><span>😠</span><b>Enojo</b></button>
+                    <button class="mood-option" type="button" data-mood="miedo" aria-pressed="false"><span>😟</span><b>Miedo</b></button>
+                    <button class="mood-option" type="button" data-mood="calma" aria-pressed="false"><span>😌</span><b>Calma</b></button>
+                    <button class="mood-option" type="button" data-mood="sorpresa" aria-pressed="false"><span>😮</span><b>Sorpresa</b></button>
+                </div>
+                <div class="mood-response" id="moodResponse" aria-live="polite">
+                    <div class="response-icon" id="responseIcon" aria-hidden="true">✧</div>
+                    <div class="response-copy">
+                        <span class="response-label">TU ESPACIO DE EXPLORACIÓN</span>
+                        <h3 id="responseTitle">Empieza por escucharte.</h3>
+                        <p id="responseText">Elige una emoción y encontrarás una pequeña idea para acompañarla.</p>
+                    </div>
+                </div>
+                <form class="journal-form" id="journalForm">
+                    <label for="journalNote">Si quieres, escribe una frase sobre este momento</label>
+                    <div class="journal-input-row">
+                        <input id="journalNote" type="text" maxlength="180" placeholder="Ahora mismo necesito…">
+                        <button class="button button-dark" type="submit" id="saveMoodButton" disabled>Guardar mi momento <span aria-hidden="true">↗</span></button>
+                    </div>
+                    <p class="form-message" id="journalMessage" aria-live="polite">Tus momentos se guardan solo en este dispositivo.</p>
+                </form>
+                <div class="journal-history" id="journalHistory" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="play-section section-wrap" id="jugar">
+            <div class="section-kicker">03 / APRENDER JUGANDO</div>
+            <div class="play-heading">
+                <div>
+                    <h2>Un poquito de<br><span>curiosidad emocional.</span></h2>
+                    <p>¿Te animas a descubrir qué harías en distintas situaciones?</p>
+                </div>
+                <div class="game-stamp" aria-hidden="true">JUEGA<br>✦<br>APRENDE</div>
+            </div>
+            <div class="quiz-card" id="quizCard">
+                <div class="quiz-topline"><span id="quizProgress">RETO 1 DE 4</span><span class="quiz-score">PUNTOS <b id="quizScore">0</b></span></div>
+                <div class="quiz-progress-track"><span id="quizProgressBar"></span></div>
+                <p class="quiz-category">¿QUÉ HARÍAS?</p>
+                <h3 id="quizQuestion">Cargando reto…</h3>
+                <div class="quiz-answers" id="quizAnswers"></div>
+                <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+                <button class="button button-primary quiz-next" id="quizNext" type="button" hidden>Siguiente reto <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="quiz-note">No es un examen: la idea es pensar en opciones que nos cuiden.</p>
+        </section>
+
+        <section class="breathing-section" id="pausa">
+            <div class="breathing-orb-bg" aria-hidden="true"></div>
+            <div class="breathing-content section-wrap">
+                <div class="breathing-copy">
+                    <div class="section-kicker">04 / UNA PAUSA AMABLE</div>
+                    <h2>Volvamos al<br><span>momento presente.</span></h2>
+                    <p>Prueba este ejercicio breve si te apetece. Si enfocarte en la respiración no se siente bien, puedes detenerlo y mirar alrededor nombrando cinco cosas que ves.</p>
+                    <button class="button button-light" id="breathingToggle" type="button">Comenzar respiración <span aria-hidden="true">↗</span></button>
+                    <p class="breathing-status" id="breathingStatus" aria-live="polite">Tú marcas el ritmo. Puedes parar cuando quieras.</p>
+                </div>
+                <div class="breathing-visual" id="breathingVisual">
+                    <div class="breath-ring"></div>
+                    <div class="breath-circle"><span id="breathingPhase">inhala</span><b id="breathingCount">4</b></div>
+                    <span class="breath-caption">sin prisa, a tu manera</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="toolkit-section section-wrap">
+            <div class="section-kicker">05 / IDEAS PARA EL DÍA A DÍA</div>
+            <h2>Pequeñas herramientas,<br><span>para cuando las necesites.</span></h2>
+            <div class="toolkit-grid">
+                <article class="toolkit-item"><span class="toolkit-icon icon-lilac">01</span><div><h3>Ponle nombre</h3><p>Pregúntate: ¿qué siento?, ¿dónde lo noto en el cuerpo?, ¿qué pasó antes?</p></div></article>
+                <article class="toolkit-item"><span class="toolkit-icon icon-peach">02</span><div><h3>Haz una pausa</h3><p>Tomarte un momento antes de responder puede ayudarte a elegir cómo actuar.</p></div></article>
+                <article class="toolkit-item"><span class="toolkit-icon icon-mint">03</span><div><h3>Exprésate con cuidado</h3><p>Prueba decir: “me siento… cuando… y me ayudaría…”.</p></div></article>
+                <article class="toolkit-item"><span class="toolkit-icon icon-yellow">04</span><div><h3>Busca compañía</h3><p>Hablar con alguien de confianza también es una forma de cuidarte.</p></div></article>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <div class="help-card section-wrap">
+                <div class="help-symbol" aria-hidden="true">♡</div>
+                <div>
+                    <span class="section-kicker">NO TIENES QUE PODER CON TODO A SOLAS</span>
+                    <h2>Pedir ayuda también<br><span>es ser valiente.</span></h2>
+                    <p>Si algo te preocupa mucho, se repite o te hace sentir en peligro, cuéntaselo a una persona adulta de confianza o busca apoyo profesional. Si existe un peligro inmediato, contacta los servicios de emergencia de tu localidad.</p>
+                </div>
+                <a class="help-link" href="#mi-emocion">Dar un primer paso <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✳</span><span>emoci<span>ona</span></span></a>
+        <p>Sentir también es conocernos. Ve a tu propio ritmo. ♡</p>
+        <a href="#inicio">Volver arriba ↑</a>
+    </footer>
+</body>
+</html>
